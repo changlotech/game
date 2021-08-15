@@ -1,0 +1,30 @@
+AWS서비스 => 컴퓨팅 EC3 => 인스턴스 => 시작 => 우분투 => 프리티어 사용가능한 T2마이크로
+=>계약 끝나면 성증작은 T2나노 써도됨 => 검토및 시작 = > 시작하기 => 키페어생성(AWS서버 점속시 필요한 KEY)
+=> 키페어다운로드 => 인스턴스 시작=> 업비트에서 아마존IP추가 => 연결
+
+git clone 주소 명령어: 깃을 이용해서 주소에있는 코드를 가져와서 저장함.
+이렇게 파일 가져와서 ls -al치면 폴더목록 볼 수 있다.
+
+cd 폴더명 명령어: 경로이동
+ls -al 명령어: 폴더보기
+
+명령어 vim ~~~.py 하면 해당 python파일 수정가능함.
+i누르면 인서트모드로 수정가능해짐.
+
+변경후
+esc키 누름 => :wq! 하면 강제저장후 종료
+
+
+
+이렇게 우분투에서 python파일을 불러왔으면
+우분투 명령어로 pyupbit 설치해야함.
+
+
+패키지 목록 업데이트: sudo apt update
+pip3 설치: sudo apt install python3-pip
+pip3로 pyupbit 설치: pip3 install pyupbit
+# 그러면 이거는 백그라운드로 실행하면서 발생로그드을 output.olg로 저장하겠다
+# 백그라운드 실행: nohup python3 bitcoinAutoTrade.py > output.log &
+실행되고 있는지 확인: ps ax | grep .py
+프로세스 종료(PID는 ps ax | grep .py를 했을때 확인 가능): kill -9 PID
+
